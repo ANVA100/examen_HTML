@@ -1,0 +1,20 @@
+/* Entrada suave del hero: el elemento que la usa se define en components.css. */
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(0.4rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Esta curva solo se nota cuando otra regla define una transición. */
+.button,
+.card,
+.site-nav__link,
+.site-footer__column a {
+    transition-timing-function: ease;
+}

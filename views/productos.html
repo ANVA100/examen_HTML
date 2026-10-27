@@ -1,0 +1,573 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f9f8">
+  <link rel="icon" type="image/svg+xml" href="../img/icons/eco-leaf.svg">
+  <meta name="description" content="Explora el catálogo de productos sustentables de EcoMarket.">
+  <title>Productos | EcoMarket</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/animations.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header">
+    <div class="site-header__inner page-wrap">
+      <a class="brand" href="../index.html" aria-label="EcoMarket, inicio"><svg class="brand__mark" viewBox="0 0 40 40"
+          aria-hidden="true">
+          <path d="M32 7C20 8 11 12 8 20c-2 5 1 10 7 10 9 0 13-13 17-23Z" fill="currentColor" />
+          <path d="M8 33c4-8 9-13 18-17" fill="none" stroke="#f5f5dc" stroke-linecap="round" stroke-width="2" />
+        </svg><span>Eco<span class="brand__accent">Market</span></span></a>
+      <nav class="site-nav" aria-label="Navegación principal"><input class="site-nav__checkbox" id="menu-principal"
+          type="checkbox" aria-label="Mostrar u ocultar menú"><label class="site-nav__button" for="menu-principal"
+          aria-hidden="true"><span></span><span></span><span></span></label>
+        <div class="site-nav__menu"><a class="site-nav__link" href="../index.html">Inicio</a><a
+            class="site-nav__link site-nav__link--current" aria-current="page" href="productos.html">Productos</a><a
+            class="site-nav__link" href="sobre-nosotros.html">Nosotros</a><a class="site-nav__link"
+            href="contacto.html">Contacto</a><a class="header-cart" href="productos.html"
+            aria-label="Ver catálogo y bolsa demostrativa"><svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M3 4h2l2 10a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2l2-6H6M10 20a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm9 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0Z" />
+            </svg><span>Mi bolsa</span></a></div>
+      </nav>
+    </div>
+  </header>
+  <main id="contenido" class="catalog-page">
+    <input class="page-switch visually-hidden" type="radio" name="pagina-catalogo" id="pagina-1" checked>
+    <input class="page-switch visually-hidden" type="radio" name="pagina-catalogo" id="pagina-2">
+    <input class="page-switch visually-hidden" type="radio" name="pagina-catalogo" id="pagina-3">
+
+    <section class="catalog-intro" aria-labelledby="catalog-title">
+      <div class="page-wrap">
+        <p class="eyebrow">Compra con intención</p>
+        <h1 id="catalog-title">Encuentra tus favoritos</h1>
+        <p>Productos prácticos para una rutina más consciente.</p>
+      </div>
+    </section>
+
+    <section class="catalog-section page-wrap" id="catalogo" aria-label="Catálogo de productos EcoMarket">
+      <div class="catalog-heading">
+        <div>
+          <h2>Selección sostenible</h2>
+          <p>20 productos · precios demostrativos en pesos colombianos</p>
+        </div>
+        <span class="catalog-count">20 productos</span>
+      </div>
+      <div class="catalog-layout">
+        <aside class="catalog-sidebar" aria-label="Filtros del catálogo">
+          <div class="catalog-sidebar__heading">
+            <h2>Filtrar productos</h2><a href="productos.html">Limpiar</a>
+          </div>
+          <fieldset class="catalog-filter">
+            <legend>Categoría</legend>
+            <div class="catalog-filter__options">
+              <input class="catalog-control visually-hidden" type="radio" name="categoria" id="categoria-todas"
+                checked><label for="categoria-todas">Todas <span>20</span></label>
+              <input class="catalog-control visually-hidden" type="radio" name="categoria"
+                id="categoria-alimentos"><label for="categoria-alimentos">Alimentos <span>7</span></label>
+              <input class="catalog-control visually-hidden" type="radio" name="categoria" id="categoria-cuidado"><label
+                for="categoria-cuidado">Cuidado Personal <span>4</span></label>
+              <input class="catalog-control visually-hidden" type="radio" name="categoria" id="categoria-moda"><label
+                for="categoria-moda">Moda <span>3</span></label>
+              <input class="catalog-control visually-hidden" type="radio" name="categoria" id="categoria-hogar"><label
+                for="categoria-hogar">Hogar <span>6</span></label>
+            </div>
+          </fieldset>
+          <fieldset class="catalog-filter">
+            <legend>Precio</legend>
+            <div class="catalog-filter__options catalog-filter__options--price">
+              <input class="catalog-control visually-hidden" type="radio" name="precio" id="precio-todos" checked><label
+                for="precio-todos">Cualquier precio</label>
+              <input class="catalog-control visually-hidden" type="radio" name="precio" id="precio-bajo"><label
+                for="precio-bajo">Hasta $20.000</label>
+              <input class="catalog-control visually-hidden" type="radio" name="precio" id="precio-medio"><label
+                for="precio-medio">$20.000 a $40.000</label>
+              <input class="catalog-control visually-hidden" type="radio" name="precio" id="precio-alto"><label
+                for="precio-alto">Más de $40.000</label>
+            </div>
+          </fieldset>
+          <fieldset class="catalog-filter">
+            <legend>Características</legend>
+            <div class="catalog-filter__options">
+              <input class="catalog-control visually-hidden" type="checkbox" id="sello-biodegradable"><label
+                for="sello-biodegradable">Biodegradable</label>
+              <input class="catalog-control visually-hidden" type="checkbox" id="sello-sin-plastico"><label
+                for="sello-sin-plastico">Sin plástico</label>
+              <input class="catalog-control visually-hidden" type="checkbox" id="sello-organico"><label
+                for="sello-organico">Orgánico</label>
+            </div>
+          </fieldset>
+          <div class="catalog-stock-filter"><input class="catalog-control visually-hidden" type="checkbox"
+              id="solo-disponibles"><label for="solo-disponibles"><span class="catalog-stock-filter__check"
+                aria-hidden="true"></span>Solo disponibles</label></div>
+          <p class="filter-note">Los filtros y la paginación se aplican con CSS.</p>
+        </aside>
+
+        <div class="catalog-content">
+          <div class="catalog-toolbar">
+            <p>20 productos seleccionados para ti</p><span>Precios en COP</span>
+          </div>
+          <form class="catalog-search" role="search" action="productos.html#catalogo" method="get"
+            aria-label="Búsqueda visual del catálogo">
+            <label class="visually-hidden" for="busqueda-productos">Buscar productos</label>
+            <input class="catalog-search__field" id="busqueda-productos" name="q" type="search"
+              placeholder="Busca por nombre o categoría" aria-describedby="busqueda-ayuda">
+            <button class="catalog-search__button" type="submit">Buscar</button>
+            <p class="catalog-search__hint" id="busqueda-ayuda">Búsqueda visual demostrativa. Usa los filtros para
+              acotar el catálogo.</p>
+          </form>
+          <div class="catalog-grid product-grid" aria-label="Productos">
+            <article class="card product-card catalog-card" data-category="cuidado" data-price="medio"
+              data-tags="biodegradable sin-plastico" data-stock="disponible">
+              <div class="product-card__image catalog-card__image"><img src="../img/products/cepillos-bambu.png"
+                  alt="Cepillos de dientes de bambú en un frasco de vidrio" loading="lazy" decoding="async"><span
+                  class="product-badge product-badge--green">Biodegradable</span><input
+                  class="favorite-toggle visually-hidden" type="checkbox" id="fav-cepillos"><label
+                  class="favorite-toggle__label" for="fav-cepillos"
+                  aria-label="Guardar Cepillos de bambú en favoritos"><svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M20.8 8.7c0 5.1-8.8 10-8.8 10s-8.8-4.9-8.8-10a4.7 4.7 0 0 1 8.8-2.3 4.7 4.7 0 0 1 8.8 2.3Z" />
+                  </svg></label></div>
+              <div class="product-card__body">
+                <p class="product-card__tag">Cuidado Personal</p>
+                <h3>Cepillos de bambú · set x4</h3>
+                <p class="product-card__description">Mangos de bambú para una rutina diaria reutilizable.</p>
+                <p class="catalog-card__stock product-stock--available">Disponible · 12 unidades</p>
+                <div class="product-card__bottom"><span class="product-card__price">$24.000</span><a
+                    class="product-card__link" href="contacto.html">Consultar</a></div>
+              </div>
+            </article>
+            <article class="card product-card catalog-card" data-category="moda" data-price="bajo"
+              data-tags="organico reutilizable" data-stock="disponible">
+              <div class="product-card__image catalog-card__image"><img src="../img/products/bolsa-malla.png"
+                  alt="Bolsa de malla de algodón con verduras frescas" loading="lazy" decoding="async"><span
+                  class="product-badge product-badge--orange">Orgánico</span><input
+                  class="favorite-toggle visually-hidden" type="checkbox" id="fav-malla"><label
+                  class="favorite-toggle__label" for="fav-malla" aria-label="Guardar Bolsa de mercado en favoritos"><svg
+                    viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M20.8 8.7c0 5.1-8.8 10-8.8 10s-8.8-4.9-8.8-10a4.7 4.7 0 0 1 8.8-2.3 4.7 4.7 0 0 1 8.8 2.3Z" />
+                  </svg></label></div>
+              <div class="product-card__body">
+                <p class="product-card__tag">Moda</p>
+                <h3>Bolsa de mercado en malla</h3>
+                <p class="product-card__description">Algodón tejido para llevar tus compras frescas.</p>
+                <p class="catalog-card__stock product-stock--available">Disponible · 8 unidades</p>
+                <div class="product-card__bottom"><span class="product-card__price">$18.000</span><a
+                    class="product-card__link" href="contacto.html">Consultar</a></div>
+              </div>
+            </article>
+            <article class="card product-card catalog-card" data-category="alimentos" data-price="alto"
+              data-tags="reutilizable sin-plastico" data-stock="disponible">
+              <div class="product-card__image catalog-card__image"><img src="../img/products/botella-vidrio.png"
+                  alt="Botella reutilizable de vidrio con funda verde y tapa de bambú" loading="lazy"
+                  decoding="async"><span class="product-badge product-badge--blue">Reutilizable</span><input
+                  class="favorite-toggle visually-hidden" type="checkbox" id="fav-botella"><label
+                  class="favorite-toggle__label" for="fav-botella"
+                  aria-label="Guardar Botella de vidrio en favoritos"><svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M20.8 8.7c0 5.1-8.8 10-8.8 10s-8.8-4.9-8.8-10a4.7 4.7 0 0 1 8.8-2.3 4.7 4.7 0 0 1 8.8 2.3Z" />
+                  </svg></label></div>
+              <div class="product-card__body">
+                <p class="product-card__tag">Alimentos</p>
+                <h3>Botella reutilizable de vidrio</h3>
+                <p class="product-card__description">Vidrio resistente con funda protectora de silicona.</p>
+                <p class="catalog-card__stock product-stock--available">Disponible · 15 unidades</p>
+                <div class="product-card__bottom"><span class="product-card__price">$42.000</span><a
+                    class="product-card__link" href="contacto.html">Consultar</a></div>
+              </div>
+            </article>
+            <article class="card product-card catalog-card" data-category="alimentos" data-price="medio"
+              data-tags="biodegradable sin-plastico" data-stock="disponible">
+              <div class="product-card__image catalog-card__image"><img src="../img/products/envolturas-reusables.png"
+                  alt="Envolturas de tela reutilizables con estampados botánicos" loading="lazy" decoding="async"><span
+                  class="product-badge product-badge--green">Biodegradable</span><input
+                  class="favorite-toggle visually-hidden" type="checkbox" id="fav-envolturas"><label
+                  class="favorite-toggle__label" for="fav-envolturas"
+                  aria-label="Guardar Envolturas reutilizables en favoritos"><svg viewBox="0 0 24 24"
+                    aria-hidden="true">
+                    <path
+                      d="M20.8 8.7c0 5.1-8.8 10-8.8 10s-8.8-4.9-8.8-10a4.7 4.7 0 0 1 8.8-2.3 4.7 4.7 0 0 1 8.8 2.3Z" />
+                  </svg></label></div>
+              <div class="product-card__body">
+                <p class="product-card__tag">Alimentos</p>
+                <h3>Envolturas reutilizables</h3>
+                <p class="product-card__description">Tela con cera vegetal para cubrir y guardar alimentos.</p>
+                <p class="catalog-card__stock product-stock--available">Disponible · 10 unidades</p>
+                <div class="product-card__bottom"><span class="product-card__price">$32.000</span><a
+                    class="product-card__link" href="contacto.html">Consultar</a></div>
+              </div>
+            </article>
+            <article class="card product-card catalog-card" data-category="cuidado" data-price="medio"
+              data-tags="sin-plastico vegano" data-stock="disponible">
+              <div class="product-card__image catalog-card__image"><img src="../img/products/shampoo-solido.png"
+                  alt="Barras sólidas de shampoo sobre una jabonera de bambú" loading="lazy" decoding="async"><span
+                  class="product-badge product-badge--purple">Sin plástico</span><input
+                  class="favorite-toggle visually-hidden" type="checkbox" id="fav-shampoo"><label
+                  class="favorite-toggle__label" for="fav-shampoo"
+                  aria-label="Guardar Shampoo sólido cítrico en favoritos"><svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M20.8 8.7c0 5.1-8.8 10-8.8 10s-8.8-4.9-8.8-10a4.7 4.7 0 0 1 8.8-2.3 4.7 4.7 0 0 1 8.8 2.3Z" />
+                  </svg></label></div>
+              <div class="product-card__body">
+                <p class="product-card__tag">Cuidado Personal</p>
+                <h3>Shampoo sólido cítrico</h3>
+                <p class="product-card__description">Barra compacta con aroma fresco para tu rutina.</p>
+                <p class="catalog-card__stock product-stock--available">Disponible · 6 unidades</p>
+                <div class="product-card__bottom"><span class="product-card__price">$28.000</span><a
+                    class="product-card__link" href="contacto.html">Consultar</a></div>
+              </div>
+            </article>
+            <article class="card product-card catalog-card" data-category="alimentos" data-price="alto"
+              data-tags="reutilizable sin-plastico" data-stock="disponible">
+              <div class="product-card__image catalog-card__image"><img src="../img/products/bolsas-silicona.png"
+                  alt="Set de bolsas de silicona reutilizables para guardar alimentos" loading="lazy"
+                  decoding="async"><span class="product-badge product-badge--blue">Reutilizable</span><input
+                  class="favorite-toggle visually-hidden" type="checkbox" id="fav-silicona"><label
+                  class="favorite-toggle__label" for="fav-silicona"
+                  aria-label="Guardar Set de bolsas de silicona en favoritos"><svg viewBox="0 0 24 24"
+                    aria-hidden="true">
+                    <path
+                      d="M20.8 8.7c0 5.1-8.8 10-8.8 10s-8.8-4.9-8.8-10a4.7 4.7 0 0 1 8.8-2.3 4.7 4.7 0 0 1 8.8 2.3Z" />
+                  </svg></label></div>
+              <div class="product-card__body">
+                <p class="product-card__tag">Alimentos</p>
+                <h3>Set de bolsas de silicona</h3>
+                <p class="product-card__description">Bolsas lavables para guardar tus alimentos.</p>
+                <p class="catalog-card__stock product-stock--low">Pocas unidades · 3 disponibles</p>
+                <div class="product-card__bottom"><span class="product-card__price">$54.000</span><a
+                    class="product-card__link" href="contacto.html">Consultar</a></div>
+              </div>
+            </article>
+            <article class="card product-card catalog-card" data-category="cuidado" data-price="bajo"
+              data-tags="biodegradable vegano" data-stock="disponible">
+              <div class="product-card__image catalog-card__image"><img src="../img/products/jabon-calendula.png"
+                  alt="Jabones artesanales de caléndula sobre una jabonera de bambú" loading="lazy"
+                  decoding="async"><span class="product-badge product-badge--green">Biodegradable</span><input
+                  class="favorite-toggle visually-hidden" type="checkbox" id="fav-calendula"><label
+                  class="favorite-toggle__label" for="fav-calendula"
+                  aria-label="Guardar Jabón de caléndula en favoritos"><svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M20.8 8.7c0 5.1-8.8 10-8.8 10s-8.8-4.9-8.8-10a4.7 4.7 0 0 1 8.8-2.3 4.7 4.7 0 0 1 8.8 2.3Z" />
+                  </svg></label></div>
+              <div class="product-card__body">
+                <p class="product-card__tag">Cuidado Personal</p>
+                <h3>Jabón artesanal de caléndula</h3>
+                <p class="product-card__description">Jabón vegetal suave con pétalos de caléndula.</p>
+                <p class="catalog-card__stock product-stock--available">Disponible · 20 unidades</p>
+                <div class="product-card__bottom"><span class="product-card__price">$16.000</span><a
+                    class="product-card__link" href="contacto.html">Consultar</a></div>
+              </div>
+            </article>
+            <article class="card product-card catalog-card" data-category="cuidado" data-price="medio"
+              data-tags="organico reutilizable" data-stock="disponible">
+              <div class="product-card__image catalog-card__image"><img src="../img/products/discos-faciales.png"
+                  alt="Discos faciales de algodón reutilizables junto a una bolsa de tela" loading="lazy"
+                  decoding="async"><span class="product-badge product-badge--orange">Orgánico</span><input
+                  class="favorite-toggle visually-hidden" type="checkbox" id="fav-discos"><label
+                  class="favorite-toggle__label" for="fav-discos" aria-label="Guardar Discos faciales en favoritos"><svg
+                    viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M20.8 8.7c0 5.1-8.8 10-8.8 10s-8.8-4.9-8.8-10a4.7 4.7 0 0 1 8.8-2.3 4.7 4.7 0 0 1 8.8 2.3Z" />
+                  </svg></label></div>
+              <div class="product-card__body">
+                <p class="product-card__tag">Cuidado Personal</p>
+                <h3>Discos faciales reutilizables · set x6</h3>
+                <p class="product-card__description">Algodón suave para reemplazar discos desechables.</p>
+                <p class="catalog-card__stock product-stock--available">Disponible · 14 unidades</p>
+                <div class="product-card__bottom"><span class="product-card__price">$22.000</span><a
+                    class="product-card__link" href="contacto.html">Consultar</a></div>
+              </div>
+            </article>
+            <article class="card product-card catalog-card" data-category="alimentos" data-price="bajo"
+              data-tags="biodegradable" data-stock="agotado">
+              <div class="product-card__image catalog-card__image"><img src="../img/products/estropajo-coco.png"
+                  alt="Estropajo de fibra de coco con mango de madera" loading="lazy" decoding="async"><span
+                  class="product-badge product-badge--green">Biodegradable</span><input
+                  class="favorite-toggle visually-hidden" type="checkbox" id="fav-estropajo"><label
+                  class="favorite-toggle__label" for="fav-estropajo"
+                  aria-label="Guardar Estropajo de coco en favoritos"><svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M20.8 8.7c0 5.1-8.8 10-8.8 10s-8.8-4.9-8.8-10a4.7 4.7 0 0 1 8.8-2.3 4.7 4.7 0 0 1 8.8 2.3Z" />
+                  </svg></label></div>
+              <div class="product-card__body">
+                <p class="product-card__tag">Alimentos</p>
+                <h3>Estropajo natural de coco</h3>
+                <p class="product-card__description">Fibra vegetal resistente para la limpieza diaria.</p>
+                <p class="catalog-card__stock product-stock--out">Agotado por ahora</p>
+                <div class="product-card__bottom"><span class="product-card__price">$9.000</span><span
+                    class="product-card__link product-card__link--disabled">Agotado</span></div>
+              </div>
+            </article>
+            <article class="card product-card catalog-card" data-category="alimentos" data-price="medio"
+              data-tags="reutilizable sin-plastico" data-stock="disponible">
+              <div class="product-card__image catalog-card__image"><img src="../img/products/pitillos-acero.png"
+                  alt="Pitillos reutilizables de acero inoxidable con cepillo y bolsa de tela" loading="lazy"
+                  decoding="async"><span class="product-badge product-badge--blue">Reutilizable</span><input
+                  class="favorite-toggle visually-hidden" type="checkbox" id="fav-pitillos"><label
+                  class="favorite-toggle__label" for="fav-pitillos"
+                  aria-label="Guardar Pitillos de acero en favoritos"><svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M20.8 8.7c0 5.1-8.8 10-8.8 10s-8.8-4.9-8.8-10a4.7 4.7 0 0 1 8.8-2.3 4.7 4.7 0 0 1 8.8 2.3Z" />
+                  </svg></label></div>
+              <div class="product-card__body">
+                <p class="product-card__tag">Alimentos</p>
+                <h3>Pitillos de acero inoxidable · set x4</h3>
+                <p class="product-card__description">Incluye cepillo de limpieza y bolsa de algodón.</p>
+                <p class="catalog-card__stock product-stock--available">Disponible · 11 unidades</p>
+                <div class="product-card__bottom"><span class="product-card__price">$26.000</span><a
+                    class="product-card__link" href="contacto.html">Consultar</a></div>
+              </div>
+            </article>
+            <article class="card product-card catalog-card" data-category="moda" data-price="medio"
+              data-tags="organico reutilizable" data-stock="disponible">
+              <div class="product-card__image catalog-card__image"><img src="../img/products/panos-cocina.png"
+                  alt="Dos paños de cocina de algodón color crema con franjas verdes" loading="lazy"
+                  decoding="async"><span class="product-badge product-badge--orange">Orgánico</span><input
+                  class="favorite-toggle visually-hidden" type="checkbox" id="fav-panos"><label
+                  class="favorite-toggle__label" for="fav-panos" aria-label="Guardar Paños de cocina en favoritos"><svg
+                    viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M20.8 8.7c0 5.1-8.8 10-8.8 10s-8.8-4.9-8.8-10a4.7 4.7 0 0 1 8.8-2.3 4.7 4.7 0 0 1 8.8 2.3Z" />
+                  </svg></label></div>
+              <div class="product-card__body">
+                <p class="product-card__tag">Moda</p>
+                <h3>Paños de cocina · set x2</h3>
+                <p class="product-card__description">Algodón orgánico de tejido absorbente y durable.</p>
+                <p class="catalog-card__stock product-stock--available">Disponible · 7 unidades</p>
+                <div class="product-card__bottom"><span class="product-card__price">$29.000</span><a
+                    class="product-card__link" href="contacto.html">Consultar</a></div>
+              </div>
+            </article>
+            <article class="card product-card catalog-card" data-category="moda" data-price="medio"
+              data-tags="organico reutilizable" data-stock="disponible">
+              <div class="product-card__image catalog-card__image"><img src="../img/products/bolsa-tote.png"
+                  alt="Bolsa tote reutilizable de algodón natural" loading="lazy" decoding="async"><span
+                  class="product-badge product-badge--orange">Orgánico</span><input
+                  class="favorite-toggle visually-hidden" type="checkbox" id="fav-tote"><label
+                  class="favorite-toggle__label" for="fav-tote" aria-label="Guardar Bolsa tote en favoritos"><svg
+                    viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M20.8 8.7c0 5.1-8.8 10-8.8 10s-8.8-4.9-8.8-10a4.7 4.7 0 0 1 8.8-2.3 4.7 4.7 0 0 1 8.8 2.3Z" />
+                  </svg></label></div>
+              <div class="product-card__body">
+                <p class="product-card__tag">Moda</p>
+                <h3>Bolsa tote de algodón reciclado</h3>
+                <p class="product-card__description">Bolso resistente para reutilizar en tus salidas.</p>
+                <p class="catalog-card__stock product-stock--low">Pocas unidades · 4 disponibles</p>
+                <div class="product-card__bottom"><span class="product-card__price">$36.000</span><a
+                    class="product-card__link" href="contacto.html">Consultar</a></div>
+              </div>
+            </article>
+            <article class="card product-card catalog-card" data-category="hogar" data-price="bajo"
+              data-tags="biodegradable sin-plastico" data-stock="disponible">
+              <div class="product-card__image catalog-card__image"><img src="../img/products/jabon-lavaplatos.png"
+                  alt="Jabón sólido para lavar platos junto a un cepillo de fibras naturales" loading="lazy"
+                  decoding="async"><span class="product-badge product-badge--green">Biodegradable</span><input
+                  class="favorite-toggle visually-hidden" type="checkbox" id="fav-jabon-platos"><label
+                  class="favorite-toggle__label" for="fav-jabon-platos"
+                  aria-label="Guardar Jabón lavaplatos en favoritos"><svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M20.8 8.7c0 5.1-8.8 10-8.8 10s-8.8-4.9-8.8-10a4.7 4.7 0 0 1 8.8-2.3 4.7 4.7 0 0 1 8.8 2.3Z" />
+                  </svg></label></div>
+              <div class="product-card__body">
+                <p class="product-card__tag">Hogar</p>
+                <h3>Jabón sólido para platos</h3>
+                <p class="product-card__description">Una barra concentrada para lavar la loza.</p>
+                <p class="catalog-card__stock product-stock--available">Disponible · 16 unidades</p>
+                <div class="product-card__bottom"><span class="product-card__price">$19.000</span><a
+                    class="product-card__link" href="contacto.html">Consultar</a></div>
+              </div>
+            </article>
+            <article class="card product-card catalog-card" data-category="hogar" data-price="bajo"
+              data-tags="biodegradable" data-stock="disponible">
+              <div class="product-card__image catalog-card__image"><img src="../img/products/cepillo-vajilla.png"
+                  alt="Cepillo de bambú con cerdas vegetales para lavar platos" loading="lazy" decoding="async"><span
+                  class="product-badge product-badge--green">Biodegradable</span><input
+                  class="favorite-toggle visually-hidden" type="checkbox" id="fav-cepillo-vajilla"><label
+                  class="favorite-toggle__label" for="fav-cepillo-vajilla"
+                  aria-label="Guardar Cepillo para vajilla en favoritos"><svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M20.8 8.7c0 5.1-8.8 10-8.8 10s-8.8-4.9-8.8-10a4.7 4.7 0 0 1 8.8-2.3 4.7 4.7 0 0 1 8.8 2.3Z" />
+                  </svg></label></div>
+              <div class="product-card__body">
+                <p class="product-card__tag">Hogar</p>
+                <h3>Cepillo para vajilla de bambú</h3>
+                <p class="product-card__description">Mango de bambú con cerdas de origen vegetal.</p>
+                <p class="catalog-card__stock product-stock--available">Disponible · 9 unidades</p>
+                <div class="product-card__bottom"><span class="product-card__price">$15.000</span><a
+                    class="product-card__link" href="contacto.html">Consultar</a></div>
+              </div>
+            </article>
+            <article class="card product-card catalog-card" data-category="hogar" data-price="medio"
+              data-tags="sin-plastico" data-stock="disponible">
+              <div class="product-card__image catalog-card__image"><img src="../img/products/pastillas-limpieza.png"
+                  alt="Tabletas concentradas de limpieza junto a un sobre de papel kraft" loading="lazy"
+                  decoding="async"><span class="product-badge product-badge--purple">Sin plástico</span><input
+                  class="favorite-toggle visually-hidden" type="checkbox" id="fav-tabletas"><label
+                  class="favorite-toggle__label" for="fav-tabletas"
+                  aria-label="Guardar Tabletas multiusos en favoritos"><svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M20.8 8.7c0 5.1-8.8 10-8.8 10s-8.8-4.9-8.8-10a4.7 4.7 0 0 1 8.8-2.3 4.7 4.7 0 0 1 8.8 2.3Z" />
+                  </svg></label></div>
+              <div class="product-card__body">
+                <p class="product-card__tag">Hogar</p>
+                <h3>Tabletas de limpieza multiusos</h3>
+                <p class="product-card__description">Concentrado para preparar una solución limpiadora.</p>
+                <p class="catalog-card__stock product-stock--low">Pocas unidades · 5 disponibles</p>
+                <div class="product-card__bottom"><span class="product-card__price">$32.000</span><a
+                    class="product-card__link" href="contacto.html">Consultar</a></div>
+              </div>
+            </article>
+            <article class="card product-card catalog-card" data-category="hogar" data-price="medio"
+              data-tags="vegano reutilizable" data-stock="disponible">
+              <div class="product-card__image catalog-card__image"><img src="../img/products/vela-soya.png"
+                  alt="Vela de cera de soya en un frasco de vidrio ámbar" loading="lazy" decoding="async"><span
+                  class="product-badge product-badge--purple">Vegano</span><input
+                  class="favorite-toggle visually-hidden" type="checkbox" id="fav-vela"><label
+                  class="favorite-toggle__label" for="fav-vela" aria-label="Guardar Vela de soya en favoritos"><svg
+                    viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M20.8 8.7c0 5.1-8.8 10-8.8 10s-8.8-4.9-8.8-10a4.7 4.7 0 0 1 8.8-2.3 4.7 4.7 0 0 1 8.8 2.3Z" />
+                  </svg></label></div>
+              <div class="product-card__body">
+                <p class="product-card__tag">Hogar</p>
+                <h3>Vela de cera de soya</h3>
+                <p class="product-card__description">Cera vegetal en frasco de vidrio reutilizable.</p>
+                <p class="catalog-card__stock product-stock--available">Disponible · 13 unidades</p>
+                <div class="product-card__bottom"><span class="product-card__price">$38.000</span><a
+                    class="product-card__link" href="contacto.html">Consultar</a></div>
+              </div>
+            </article>
+            <article class="card product-card catalog-card" data-category="hogar" data-price="bajo"
+              data-tags="biodegradable" data-stock="disponible">
+              <div class="product-card__image catalog-card__image"><img src="../img/products/esponja-luffa.png"
+                  alt="Esponja vegetal de luffa natural en dos formas" loading="lazy" decoding="async"><span
+                  class="product-badge product-badge--green">Biodegradable</span><input
+                  class="favorite-toggle visually-hidden" type="checkbox" id="fav-luffa"><label
+                  class="favorite-toggle__label" for="fav-luffa" aria-label="Guardar Esponja de luffa en favoritos"><svg
+                    viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M20.8 8.7c0 5.1-8.8 10-8.8 10s-8.8-4.9-8.8-10a4.7 4.7 0 0 1 8.8-2.3 4.7 4.7 0 0 1 8.8 2.3Z" />
+                  </svg></label></div>
+              <div class="product-card__body">
+                <p class="product-card__tag">Hogar</p>
+                <h3>Esponja vegetal de luffa</h3>
+                <p class="product-card__description">Fibra natural para la limpieza del hogar.</p>
+                <p class="catalog-card__stock product-stock--available">Disponible · 18 unidades</p>
+                <div class="product-card__bottom"><span class="product-card__price">$11.000</span><a
+                    class="product-card__link" href="contacto.html">Consultar</a></div>
+              </div>
+            </article>
+            <article class="card product-card catalog-card" data-category="alimentos" data-price="medio"
+              data-tags="reutilizable organico" data-stock="disponible">
+              <div class="product-card__image catalog-card__image"><img src="../img/products/filtro-cafe.png"
+                  alt="Filtro de café reutilizable de algodón sobre una taza" loading="lazy" decoding="async"><span
+                  class="product-badge product-badge--orange">Reutilizable</span><input
+                  class="favorite-toggle visually-hidden" type="checkbox" id="fav-filtro"><label
+                  class="favorite-toggle__label" for="fav-filtro" aria-label="Guardar Filtro de café en favoritos"><svg
+                    viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M20.8 8.7c0 5.1-8.8 10-8.8 10s-8.8-4.9-8.8-10a4.7 4.7 0 0 1 8.8-2.3 4.7 4.7 0 0 1 8.8 2.3Z" />
+                  </svg></label></div>
+              <div class="product-card__body">
+                <p class="product-card__tag">Alimentos</p>
+                <h3>Filtro de café reutilizable</h3>
+                <p class="product-card__description">Filtro de tela lavable para tu café de cada día.</p>
+                <p class="catalog-card__stock product-stock--available">Disponible · 8 unidades</p>
+                <div class="product-card__bottom"><span class="product-card__price">$21.000</span><a
+                    class="product-card__link" href="contacto.html">Consultar</a></div>
+              </div>
+            </article>
+            <article class="card product-card catalog-card" data-category="alimentos" data-price="medio"
+              data-tags="biodegradable reutilizable" data-stock="disponible">
+              <div class="product-card__image catalog-card__image"><img src="../img/products/cubiertos-bambu.png"
+                  alt="Set de cubiertos reutilizables de bambú con funda de tela" loading="lazy" decoding="async"><span
+                  class="product-badge product-badge--green">Biodegradable</span><input
+                  class="favorite-toggle visually-hidden" type="checkbox" id="fav-cubiertos"><label
+                  class="favorite-toggle__label" for="fav-cubiertos"
+                  aria-label="Guardar Cubiertos de bambú en favoritos"><svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M20.8 8.7c0 5.1-8.8 10-8.8 10s-8.8-4.9-8.8-10a4.7 4.7 0 0 1 8.8-2.3 4.7 4.7 0 0 1 8.8 2.3Z" />
+                  </svg></label></div>
+              <div class="product-card__body">
+                <p class="product-card__tag">Alimentos</p>
+                <h3>Cubiertos de bambú con funda</h3>
+                <p class="product-card__description">Set portátil con tenedor, cuchara y cuchillo.</p>
+                <p class="catalog-card__stock product-stock--low">Pocas unidades · 3 disponibles</p>
+                <div class="product-card__bottom"><span class="product-card__price">$27.000</span><a
+                    class="product-card__link" href="contacto.html">Consultar</a></div>
+              </div>
+            </article>
+            <article class="card product-card catalog-card" data-category="hogar" data-price="medio"
+              data-tags="reutilizable sin-plastico" data-stock="disponible">
+              <div class="product-card__image catalog-card__image"><img src="../img/products/dispensador-vidrio.png"
+                  alt="Dispensador rellenable de jabón de vidrio transparente" loading="lazy" decoding="async"><span
+                  class="product-badge product-badge--blue">Reutilizable</span><input
+                  class="favorite-toggle visually-hidden" type="checkbox" id="fav-dispensador"><label
+                  class="favorite-toggle__label" for="fav-dispensador"
+                  aria-label="Guardar Dispensador de vidrio en favoritos"><svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M20.8 8.7c0 5.1-8.8 10-8.8 10s-8.8-4.9-8.8-10a4.7 4.7 0 0 1 8.8-2.3 4.7 4.7 0 0 1 8.8 2.3Z" />
+                  </svg></label></div>
+              <div class="product-card__body">
+                <p class="product-card__tag">Hogar</p>
+                <h3>Dispensador rellenable de vidrio</h3>
+                <p class="product-card__description">Envase durable para reutilizar con tus recargas.</p>
+                <p class="catalog-card__stock product-stock--available">Disponible · 6 unidades</p>
+                <div class="product-card__bottom"><span class="product-card__price">$34.000</span><a
+                    class="product-card__link" href="contacto.html">Consultar</a></div>
+              </div>
+            </article>
+          </div>
+          <nav class="catalog-pagination" aria-label="Páginas del catálogo">
+            <span class="catalog-pagination__label">Página</span>
+            <label class="catalog-pagination__choice catalog-pagination__step catalog-pagination__step--previous-2"
+              for="pagina-1">Anterior</label>
+            <label class="catalog-pagination__choice catalog-pagination__step catalog-pagination__step--previous-3"
+              for="pagina-2">Anterior</label>
+            <label class="catalog-pagination__choice" for="pagina-1">1</label>
+            <label class="catalog-pagination__choice" for="pagina-2">2</label>
+            <label class="catalog-pagination__choice" for="pagina-3">3</label>
+            <label class="catalog-pagination__choice catalog-pagination__step catalog-pagination__step--next-1"
+              for="pagina-2">Siguiente</label>
+            <label class="catalog-pagination__choice catalog-pagination__step catalog-pagination__step--next-2"
+              for="pagina-3">Siguiente</label>
+          </nav>
+          <p class="catalog-footnote">Las cantidades y los precios son demostrativos para este proyecto académico.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer" id="footer">
+    <div class="site-footer__main page-wrap">
+      <div class="site-footer__brand"><a class="brand brand--footer" href="../index.html"><svg class="brand__mark"
+            viewBox="0 0 40 40" aria-hidden="true">
+            <path d="M32 7C20 8 11 12 8 20c-2 5 1 10 7 10 9 0 13-13 17-23Z" fill="currentColor" />
+            <path d="M8 33c4-8 9-13 18-17" fill="none" stroke="#f5f5dc" stroke-linecap="round" stroke-width="2" />
+          </svg><span>Eco<span class="brand__accent">Market</span></span></a>
+        <p>Alternativas sencillas para vivir<br>con más cuidado.</p>
+      </div>
+      <div class="site-footer__column">
+        <h2>Explora</h2><a href="productos.html">Productos</a><a href="sobre-nosotros.html">Sobre nosotros</a><a
+          href="contacto.html">Contacto</a>
+      </div>
+      <div class="site-footer__column">
+        <h2>Contacto</h2><a href="mailto:hola@ecomarket.example">hola@ecomarket.example</a><span>Bogotá, Colombia</span>
+      </div>
+      <div class="site-footer__column">
+        <h2>Síguenos</h2><a href="#footer">Instagram</a><a href="#footer">Facebook</a><a href="#footer">Pinterest</a>
+      </div>
+    </div>
+    <div class="site-footer__bottom page-wrap"><span>© 2026 EcoMarket · Proyecto demostrativo</span>
+      <div><a href="contacto.html#privacidad">Privacidad</a><a href="contacto.html#terminos">Términos</a></div>
+    </div>
+  </footer>
+</body>
+
+</html>

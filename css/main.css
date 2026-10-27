@@ -1,0 +1,60 @@
+/* EcoMarket · verdes naturales y tierra, reinicio y estilos globales */
+:root {
+  color-scheme: light;
+  --color-primary: #2ecc71;
+  --color-primary-dark: #27ae60;
+  --color-brand: #27ae60;
+  --color-brand-dark: #1e8449;
+  --color-forest: #24543b;
+  --color-leaf: #6c9567;
+  --color-sage: #dce8d5;
+  --color-beige: #f5f5dc;
+  --color-background: #f7f9f8;
+  --color-paper: #ffffff;
+  --color-earth: #8b674f;
+  --color-ink: #182338;
+  --color-muted: #65748a;
+  --color-line: #dbe2d7;
+  --color-error: #b33f35;
+  --color-success: #33754a;
+  --font-body: "Segoe UI", Arial, sans-serif;
+  --font-display: Georgia, "Times New Roman", serif;
+  --radius-small: 0.4rem;
+  --radius-medium: 0.9rem;
+  --radius-large: 1.5rem;
+  --content-width: 74rem;
+  --shadow-soft: 0 0.8rem 2.2rem rgb(36 84 59 / 10%);
+}
+
+/* El ancho incluye también el relleno y el borde del elemento. */
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+body { min-width: 20rem; margin: 0; background: var(--color-background); color: var(--color-ink); font-family: var(--font-body); font-size: 1rem; line-height: 1.6; }
+img, svg { display: block; max-width: 100%; }
+img { height: auto; }
+button, input, textarea, select { font: inherit; }
+a { color: inherit; text-decoration: none; }
+button, a, input, textarea, select { -webkit-tap-highlight-color: transparent; }
+h1, h2, h3, h4, p, figure { margin: 0; }
+ul, ol { margin: 0; padding: 0; }
+
+:focus-visible { outline: 3px solid #9a632f; outline-offset: 4px; }
+::selection { background: var(--color-sage); color: var(--color-forest); }
+
+.page-wrap { width: min(var(--content-width), calc(100% - 2rem)); margin-inline: auto; }
+/* Oculta el control a la vista, pero lo conserva para teclado y lectores de pantalla. */
+.visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; clip-path: inset(50%); }
+.skip-link { position: fixed; z-index: 100; top: 0.75rem; left: 0.75rem; padding: 0.65rem 1rem; transform: translateY(-160%); border-radius: var(--radius-small); background: var(--color-forest); color: white; }
+.skip-link:focus { transform: translateY(0); }
+.page-placeholder { min-height: 25rem; }
+
+@media (min-width: 48rem) {
+  .page-wrap { width: min(var(--content-width), calc(100% - 4rem)); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+}
